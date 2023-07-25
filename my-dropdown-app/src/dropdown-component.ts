@@ -24,6 +24,8 @@ export class DropdownComponent extends LitElement {
       min-width: 160px; /* Set a minimum width for the dropdown */
       padding: 8px; /* Add some padding for better spacing */
       z-index: 1; /* Ensure the dropdown appears on top of other elements */
+      overflow-y: auto;
+      max-height: 250px;
   }
 
 /* Style the individual options */

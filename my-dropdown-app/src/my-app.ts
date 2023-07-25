@@ -4,7 +4,8 @@ import './dropdown-component';
 
 @customElement('my-app')
 export class App extends LitElement {
-  @state() dropdownOptions = ['Option 1', 'Option 2', 'Option 3'];
+
+  @state() dropdownOptions = Array.from({ length: 20 }, (_, index) => `Item ${index + 1}`);
   @state() dropdownPosition: 'left' | 'right' = 'left';
   @state() open = false;
 
